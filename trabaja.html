@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Trabaja con nosotros</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <img src="work.jpg" alt="Cover FunkoTopia">
+    <h1>Trabaja con nosotros</h1>
+    <p>¿Estás interesado en formar parte de nuestro equipo?</p>
+    <p>Añade tus datos a continuación:</p>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <p>Nombre: <input class="First name" type="text"  name="First name" placeholder="Introduzca su Nombre" required> </p>
+            <p>Apellidos <input class="Last Name" type="text"  name="Last name" placeholder="Introduzca sus apellidos" required></p>
+            <p>DNI <input class="dni" type="text" name="dni" placeholder="Introduzca su DNI" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra" minlength="9" maxlength="9"></p>
+            <p>Sexo 
+                <input class="Hombre" type="radio" name="sexo" value="h">Hombre
+                <input class="Mujer" type="radio" name="sexo" value="m">Mujer
+                <input class="Otro" type="radio" name="sexo" value="o">Otro
+            </p>
+            <p>Fecha de nacimiento
+                <input class="datebirth" type="date" name="datebirth">
+            </p>
+            <p>Ciudad
+                <input class="ciudad"  type="text" name="ciudad">
+            </p>
+            <p>Nacionalidad
+                <input class="Nacionalidad" type="text" name="Nacionalidad">
+            </p>
+            <p>Código Postal
+                <input class="CP" type="text" name="CP" pattern="[0-9]{5}" title="Debe poner un código postal correcto ej 28021" minlength="5" maxlength="5">
+            </p>
+            <p>Teléfono
+                <input class="teléfono" type="tel" name="teléfono" placeholder="623357602" pattern="[0-9]{9}" required>
+            </p>
+            <p>Email
+                <input class="email" type="email" name="email" placeholder="ejemplo@ejemplo.com" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Formación</legend>
+            <p>Titulaciones <input class="Titulaciones" type="text" name="Titulaciones"></p>
+            <p>Fecha Inicio<input class="fecha inicio" type="date" name="fecha inicio"></p>
+            <p>Fecha Fin<input type="date" name="fecha fin"></p>
+            <p>Curriculum Vitae
+                <input class="cv" type="file" name="cv">
+            </p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Idiomas</legend>
+            <p>Idioma <input class="idioma" type="text" name="idioma"></p>
+            <p><select name="nivelIdioma" size="1">
+                <option value="Excelente">Excelente</option>
+                <option value="Bien">Bien</option>
+                <option value="Regular">Regular</option>
+                <option value="Nada">Nada</option>
+            </select></p>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+    
+    <a href="Trabajo.html">Inicio</a>
+</body>
+<footer>
+    <h3>Tambien puedes visitarnos en: </h3>
+</footer>
+</html>
